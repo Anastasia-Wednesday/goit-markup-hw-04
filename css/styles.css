@@ -90,8 +90,11 @@ header {
 }
 
 .header-contact-link {
+  display: flex;
+  align-items: center;
+
   padding: 32px 0;
-  display: block;
+
   color: #757575;
   text-decoration: none;
   font-style: normal;
@@ -104,8 +107,6 @@ header {
 .header-icon {
   margin-right: 10px;
   fill: currentColor;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .main-navigation-link:hover,
@@ -186,13 +187,16 @@ header {
 }
 
 .features-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+
   width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-  justify-content: center;
-  padding: 25px 102.34px;
-  margin-bottom: 30px;
 }
 
 .features-icon {
@@ -281,12 +285,11 @@ header {
 .team-member {
   width: 270px;
 
-  left: 215px;
-  top: 1635px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  list-style-type: none;
 }
 
 .team-member:not(:last-child) {
@@ -301,7 +304,7 @@ header {
 
 .team-member-text {
   padding-top: 30px;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
 }
 
 .team-member-name {
@@ -315,6 +318,8 @@ header {
 }
 
 .team-member-occupation {
+  margin-bottom: 16px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -324,11 +329,9 @@ header {
 }
 
 .team-icon-container {
-  margin-right: 32px;
-  margin-left: 32px;
-  margin-bottom: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
   cursor: pointer;
   list-style-type: none;
 }
@@ -380,17 +383,19 @@ header {
 }
 
 .client-link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   cursor: pointer;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding: 16px 32px;
 }
 
 .client-link:hover {
-  border: 1px solid #2196f3;
+  border-color: #2196f3;
 }
 
 .client-link:hover .client-icon {
@@ -491,7 +496,7 @@ header {
   display: flex;
 }
 
-.join-icons-item {
+.join-icons-item:not(:last-child) {
   margin-right: 10px;
 }
 
