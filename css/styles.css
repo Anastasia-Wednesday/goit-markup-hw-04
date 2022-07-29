@@ -330,9 +330,10 @@ header {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  list-style-type: none;
 }
 
-.team-icon-con {
+.team-icon-link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -340,13 +341,13 @@ header {
   align-items: center;
 }
 
-.team-icon-con:hover .team-icon {
-  fill: #fff;
-}
-
-.team-icon-con:hover {
+.team-icon-link:hover {
   background-color: #2196f3;
   border-radius: 50%;
+}
+
+.team-icon-link:hover .team-icon {
+  fill: #fff;
 }
 
 .team-icon {
@@ -411,6 +412,10 @@ header {
   padding-bottom: 60px;
 }
 
+.footer-elements {
+  display: flex;
+}
+
 .logo-inv {
   display: inline-block;
   font-family: 'Raleway';
@@ -462,6 +467,51 @@ header {
 .footer-mail:focus,
 .footer-phone:focus {
   color: #2196f3;
+}
+
+/* join */
+
+.join-section {
+  padding-top: 12px;
+  margin-left: 70px;
+}
+
+.join-header {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.join-icons-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.join-icons-item {
+  margin-right: 10px;
+}
+
+.join-icon-link {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.join-icon-link:hover {
+  background: #2196f3;
+}
+
+.join-icon {
+  fill: #ffffff;
 }
 
 /* portfolio */
